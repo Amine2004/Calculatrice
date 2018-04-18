@@ -7,6 +7,7 @@
 #include "Erreur.hpp"
 #include <cmath>
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -15,9 +16,10 @@ const map<string,int> priority_op;
 const string op_size_1("+ - / * ^ % !");
 const string op_size_2("ln");
 const string op_size_3("exp cos sin tan log");
-const string op_size_4("sqrt");
+const string op_size_4("sqrt Fact");
 const string op_size_5("arccos arcsin arctan");
 
+double factoriel(long double n);
 
 class Calculator{
 	private:
@@ -59,5 +61,4 @@ class Calculator{
 		string getCalcul();
 		string getResult();
 };
-
 #endif
